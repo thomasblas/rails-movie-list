@@ -1,0 +1,9 @@
+<div class = "container" style = "text align center">
+<h1>Here comes your sacred lists</h1>
+<ul list-style: none>
+  <% @lists.each do |list| %>
+    <li><%= link_to list.name, list_path(list) %></li>
+  <% end %>
+</ul>
+<a name="Create a new list" id="Create a new list" class="btn btn-primary" href="lists/new" role="button">Create a new list</a>
+</div>
