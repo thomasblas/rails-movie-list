@@ -1,9 +1,31 @@
 <div class = "container" style = "text align center">
-<h1>Here comes your sacred lists</h1>
-<ul list-style: none>
+<div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://thegratefulzine.files.wordpress.com/2014/03/1077172_692146300801874_1716500270_o.jpg);">
+  <div class="container">
+    <h1>Here comes your sacred lists with epic movies !</h1>
+  </div>
+</div>
+
+<div class="cards">
+  
   <% @lists.each do |list| %>
-    <li><%= link_to list.name, list_path(list) %></li>
-  <% end %>
-</ul>
-<a name="Create a new list" id="Create a new list" class="btn btn-primary" href="lists/new" role="button">Create a new list</a>
+  <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/breakfast.jpg)">
+      <a href="link_to list.name, list_path(list)"><%= link_to list.name, list_path(list) %></a>
+      </div>
+      <% end %> 
+</div>
+
+<a name="Create a new list" id="Create a new list" class="btn btn-secondary" href="lists/new" role="button">Create a new list</a>
+
+<div class="footer">
+  <div class="footer-links">
+    <a href="#"><i class="fab fa-github"></i></a>
+    <a href="#"><i class="fab fa-instagram"></i></a>
+    <a href="#"><i class="fab fa-facebook"></i></a>
+    <a href="#"><i class="fab fa-twitter"></i></a>
+    <a href="#"><i class="fab fa-linkedin"></i></a>
+  </div>
+  <div class="footer-copyright">
+    This webapp is made with <i class="fas fa-heart"></i> by a Le Wagon Alumni
+  </div>
+</div>
 </div>
